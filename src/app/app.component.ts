@@ -10,7 +10,6 @@ import { TestComponent } from './test/test.component';
 })
 export class AppComponent {
   title = 'TechLabs-angular 251';
-  a=10;
-  b=3;
-  ans = this.a+this.b;
+  inputValue: string ="angular";
+  isDisabled: boolean =false;
 }

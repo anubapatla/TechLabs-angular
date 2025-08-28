@@ -6,8 +6,13 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<h1>{{ "wecome"+ title}}</h1>
-<p>value of a: {{ a }}</p>
-<p>value of b: {{ b }}</p>
-<p>Addition is: </p>
+<div>
+  <h1>property binding</h1>
+  <input type="text" 
+    class="styled-input"  value="{{ inputValue}}" disabled="{{isDisabled}}"/>
+  <br/><br/>
+  <input type="text" class="styled-input" 
+    [value] ="inputValue"
+     [disabled]="isDisabled"/>
+</div>
 <app-test></app-test>
