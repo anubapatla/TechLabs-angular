@@ -10,9 +10,9 @@
   
   <h1> counter example</h1>
   <div class="btn-container">
-    <button> ---</button>
-     <p></p>
-  <button>++</button>
+    <button (click)="counter('decre')"> ---</button>
+     <p>{{ count}}</p>
+  <button (click)="counter('incr')">++</button>
   </div>
   
      

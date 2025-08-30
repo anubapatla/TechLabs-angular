@@ -9,10 +9,11 @@ import { TestComponent } from './test/test.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'TechLabs-angular 251';
-  inputValue: string ="angular";
-  isDisabled: boolean =false;
-  display(){
-    alert("click event is triggerd");
+  count:number =0;
+  counter(type: string){
+    type === 'incr'?this.count++ :this.count--;
+
   }
-}
+
+  }
+
