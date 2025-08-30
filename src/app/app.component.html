@@ -9,10 +9,12 @@
 <div>
   <h1>property binding</h1>
   <input type="text" 
-    class="styled-input"  value="{{ inputValue}}" disabled="{{isDisabled}}"/>
+    class="styled-input"  value="{{ inputValue}}" disabled="{{isDisabled
+    }}"/>
   <br/><br/>
   <input type="text" class="styled-input" 
     [value] ="inputValue"
      [disabled]="isDisabled"/>
+     <button type="submit" (click)="display()">click Me</button>
 </div>
 <app-test></app-test>
