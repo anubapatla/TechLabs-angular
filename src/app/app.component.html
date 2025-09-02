@@ -6,15 +6,13 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<div class="container">
   
-  <h1> counter example</h1>
-  <div class="btn-container">
-    <button (click)="counter('decre')"> ---</button>
-     <p>{{ count}}</p>
-  <button (click)="counter('incr')">++</button>
-  </div>
+<input type="text" [(ngModel)]="staticInput "  >
+<br><br>
+<input type="text" [(ngModel)]="dynamicInput">
+<h1> {{ dynamicInput}}</h1>
+  
   
      
-    </div>
+    
 <app-test></app-test>
