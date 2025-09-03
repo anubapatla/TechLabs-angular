@@ -12,7 +12,10 @@ import { NgIf } from '@angular/common';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  display: boolean =true;
+  displayElement : boolean =true;
+  show(): void {
+    this.displayElement=!this.displayElement;
+  }
   }
 
   

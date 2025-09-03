@@ -6,8 +6,11 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-  
-<div *ngIf="display">structural directive</div>
-     
-    
+  <div class="container">
+<button (click)="show()">show</button>
+<div *ngIf="displayElement" class="content-box">
+  <p>bhbslhguilguiggalguguir</p>
+</div>
+
+</div>
 <app-test></app-test>
